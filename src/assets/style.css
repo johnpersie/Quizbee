@@ -33,6 +33,7 @@
   font-size: 1.2em;
   font-weight: bold;
   margin-bottom: 5px;
+  transition: 400ms ease-in-out;
 }
 
 .questionBox {
@@ -47,18 +48,24 @@
 .answerBtn {
   position: relative;
   padding: 10px;
-  background-color: rgb(250, 151, 37);
+  background-color: rgb(5, 114, 54);
   display: inline-block;
   margin: 10px;
   outline: none;
-  border: none;
   font-size: 1em;
   color: rgb(255, 255, 255);
   font-weight: bold;
-  border-radius: 4px;
+  border-radius: 6px;
   cursor: pointer;
+  outline: 2px solid rgb(46, 182, 46);
+  border: 2px solid rgb(46, 182, 46);
+  outline-offset: -2px;
+  transition: outline-offset 200ms ease;
 }
-
+.answerBtn:hover,
+.answerBtn:focus {
+  outline-offset: 2px;
+}
 .score-board {
   position: relative;
   height: 700px;
@@ -83,6 +90,13 @@
   left: 0px;
   right: 0px;
   margin: auto;
-  outline: none;
+  border-radius: 4px;
+  border: 2px solid rgb(46, 182, 46);
   cursor: pointer;
+  transition: transform 200ms ease;
+}
+.playBtn:hover,
+.playBtn:focus {
+  transform: scale(1.2, 1.2);
+  transition: transform 200ms ease-in-out;
 }
