@@ -46,6 +46,8 @@ class QuizBee extends Component {
               />
             )
           )}
+
+        {this.state.responses === 5 ? <h2>{this.state.score}</h2> : null}
       </div>
     );
   }
