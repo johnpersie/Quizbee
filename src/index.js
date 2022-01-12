@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import "./assets/style.css";
-import quizService from "./quizService";
+import quizService from "./quizService/index";
 import QuestionBox from "./components/QuestionBox";
 
 class QuizBee extends Component {
@@ -27,7 +27,7 @@ class QuizBee extends Component {
             ({ question, answers, correct, questionId }) => (
               <QuestionBox
                 question={question}
-                Option={answers}
+                options={answers}
                 key={questionId}
               />
             )
