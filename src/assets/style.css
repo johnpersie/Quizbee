@@ -60,7 +60,7 @@
   outline: 2px solid rgb(46, 182, 46);
   border: 2px solid rgb(46, 182, 46);
   outline-offset: -2px;
-  transition: outline-offset 200ms ease;
+  transition: outline-offset 200ms ease-in-out;
 }
 .answerBtn:hover,
 .answerBtn:focus {
@@ -93,7 +93,7 @@
   border-radius: 4px;
   border: 2px solid rgb(46, 182, 46);
   cursor: pointer;
-  transition: transform 200ms ease;
+  transition: transform 200ms ease-in-out;
 }
 .playBtn:hover,
 .playBtn:focus {
